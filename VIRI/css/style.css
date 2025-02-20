@@ -10,30 +10,39 @@ letter-spacing: 0%;
 text-align: left;
 text-transform: uppercase;
 }
+body{
+    overflow-x: hidden; 
+}
+html {
+    scroll-behavior: smooth;
+}
+
 header{
 
-width: 1440px;
-height: 800px;
+
+
 background-color: rgb(178, 226, 175);
 padding-top: 44px;
 }
+
+
+
+
 .logo{
-    width: 870;
-    height: 500;
-    margin-top: 92px;
+    width: 900px;
+    height: 518px;
+    margin-top: 0px;
     margin-bottom: 200px;
     
 }
 .House{
     position: absolute;
-    width: 500px;
-    height: 600px;
-    margin-left: 68px;
-    margin-top: 176px;
+    transform: translate(103%, -12%);
+
 }
 nav{
 
-width: 1078px;
+
 height: 23px;
 display: flex;
 margin-left: 165px;
@@ -41,11 +50,14 @@ margin-left: 165px;
 
 }
 .nav-list{
-    width: 340px;
+
 height: 23px;
 display: flex;
 list-style: none;
+position: relative;
+z-index: 2;
 }
+
 a{text-decoration: none;
 margin-left: 52px;
 color: rgb(30, 50, 64);
@@ -64,7 +76,8 @@ h2{margin-right: 662px;
     height: 18px;
     margin: 0;
 }
-h1{color: rgb(30, 50, 64);
+h1{
+    color: rgb(30, 50, 64);
     font-family: Mulish;
     font-size: 90px;
     font-weight: 700;
@@ -91,8 +104,7 @@ p{color: rgb(30, 50, 64);
     margin-bottom: 37px;
 }
 .our-project{
-    width: 141px;
-    height: 53px;
+    
     color: rgb(255, 255, 255);
 font-family: Mulish;
 font-size: 14px;
@@ -101,8 +113,10 @@ line-height: 120%;
 letter-spacing: 0%;
 text-align: left;
 background: rgb(92, 176, 86);
-padding-left: 10px;
+    padding: 18px 24px;
 border-color: rgb(92, 176, 86);;
+border: none;
+    margin-right: 16px;
     }
 .our-contacts{
     width: 148px;
@@ -119,11 +133,11 @@ padding-left: 11px;
     
 }
 .bg{
-    
-    width: 1440px;
-    height: 800px;
     display: flex;
     background: rgb(255, 255, 255);
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 10;
     }
 .left-bg{
 
@@ -154,7 +168,7 @@ h3{color: rgb(30, 50, 64);
     letter-spacing: 0%;
     text-align: left;
     margin: 0;
-    margin-top: 12px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 .experience{display: flex;}
@@ -179,7 +193,7 @@ h4{color: rgb(178, 226, 175);
 }
 .additional-info{
 
-width: 158px;
+width: auto;
 height: 83px;
 display: flex;
 flex-direction: column;
@@ -188,9 +202,10 @@ align-items: flex-start;
 gap: 8;
 padding: 0px;
 margin-right: 32px;
+margin-top: 15px;
 }
-.our-projects{width: 1440px;
-    height:2400px;
+.our-projects{
+
     padding-left: 116px;
 }
 .info-box{
@@ -211,28 +226,32 @@ margin-bottom: 58px;
     margin-top: 60px;
     margin-left: 494px;
     width: 100px;
-height: 32px;
-display: flex;
-text-align: left;
+    height: 32px;
+    display: flex;
+    text-align: left;
 }
-.img{width: 350px;
+.img{
+    width: 350px;
     height: 465px;
-margin-right: 92px;
-margin-bottom: 52px;}
-.img-box{
-    width: 1400px;
-    height: 2300px;
+    margin-right: 92px;
+    margin-bottom: 52px;
 }
+
 footer{
-    width: 1440px;
-    height: 400px;
+
     background: rgb(178, 226, 175);
     padding-top: 90px;
     display: flex;
+    position: relative;
+    z-index: 10;
 }
-.icons{height: 14px;
+.icons{
+    height: 14px;
 width: 14px;
-margin-right: 10px}
+margin-right: 10px
+}
+
+
 .name{
     margin: 0;
     color: rgb(30, 50, 64);
@@ -245,24 +264,429 @@ text-align: left;
 margin-left: 10px;
 
 }
-.phone{display: flex;
-}
+.phone{display: flex;}
 .contact-info{
     width: 255px;
 height: 159px;
-text-align: left;
+text-align: center;
 
+}
+
+.contact-info h2{
+    margin-bottom: 20px;
 }
 footer div div a{
     margin: 0;
 }
 .footer-box{
     display: flex;
-width: 1081px;
+width: auto;
 height: 265px;
 margin-left: 165px;
+
 
 }
 footer div .social-media p {
     margin: 0;
 }
+
+.contact-info {
+    display: flex;
+   justify-content: space-between;
+    text-align: center;
+}
+
+.social-media {
+    margin-left: 370px;
+}
+
+
+
+@media(min-width: 1200px){
+    .our-projects{
+        padding-left: 170px;
+    }
+
+
+    .contact-info div h2{
+
+        margin-right: 0;
+    }
+
+    #UsContact{
+        height: 350px;
+    }
+
+    .social-media {
+        margin-left: 0px;
+    }
+
+
+
+    .contact-info div{
+        width: 300px;
+    }
+
+    .contact-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        margin-right: -900px;
+    }
+
+}
+
+@media(min-width: 1024px) and (max-width: 1199px ){
+    .House{
+        width: 50%;
+        position: absolute;
+        transform: translate(135%, 18%);
+    
+    }
+
+    #viriHeader{
+        margin-right: 450px;
+    }
+
+    .left-bg{
+        margin-left: 50px;
+        margin-right: 70px;
+    }
+
+    .logo{
+        width: 800px;
+    }
+
+    .img{
+        margin-right: 72px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 1023px ){
+    .House{
+        width: 30%;
+        position: absolute;
+        transform: translate(250%, 45%);
+    
+    }
+
+    #viriHeader{
+        margin-right: 150px;
+    }
+
+    .left-bg{
+        margin-left: 50px;
+        margin-right: 30px;
+        
+        width: 345px;
+        height: 400px;
+        margin-top: 180px;
+
+    }
+
+    .logo{
+        width: 500px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .img{
+        width: 300px;
+        height: 415px;
+        margin-right: 22px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: -250px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .content p{
+        font-size: 10px;
+    }
+
+    .our-project{
+        font-size: 10px;
+        padding: 11px 15px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 108px;
+        height: 33px;  
+        font-size: 10px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 70px;
+    }
+
+}
+
+@media(min-width: 576px) and (max-width: 767px ){
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(180%, 26%);
+    
+    }
+
+    #viriHeader{
+        margin-right: 50px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+
+    }
+
+    .logo{
+        width: 400px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .img{
+        width: 200px;
+        height: 315px;
+        margin-right: 22px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: -260px;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-top: -30px;
+    }
+
+    .content p{
+        font-size: 6px;
+    }
+
+    .our-project{
+        font-size: 10px;
+        padding: 11px 15px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 108px;
+        height: 33px;  
+        font-size: 10px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    .description{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 70px;
+    }
+
+    nav{
+        margin-left: 65px;
+    }
+    .nav-list li a{
+        font-size: 10px;
+    }
+
+    .footer-box{
+        margin-left: 30px;
+    }
+
+
+}
+
+@media(max-width: 575px ){
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(177%, 59%);
+        display: none;
+    
+    }
+
+    #viriHeader{
+        margin-right: 35px;
+        font-size: 10px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+        display: none;
+    }
+
+    .logo{
+        width: 280px;
+        height: auto;
+        margin-bottom: 100px;
+
+    }
+
+    .img{
+        width: 145px;
+        height: 260px;
+        margin-right: 8px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+    h1{
+        font-size: 30px;
+        /* margin-top: -65px;
+        margin-left: -100px; */
+    }
+
+    .content p{
+        font-size: 6px;
+    }
+
+    .our-project{
+        font-size: 8px;
+        padding: 7px 10px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 90px;
+        height: 24px;  
+        font-size: 8px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .description{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    h4{
+        font-size: 10px;
+        margin-left: 15px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 30px;
+    }
+
+    nav{
+        margin-left: 19px;
+    }
+    .nav-list li a{
+        font-size: 10px;
+    }
+
+    .footer-box{
+        margin-left: 30px;
+    }
+
+    .content{
+        position: absolute;
+        width: 650px;
+        height: 483px;
+        left: 87px;
+        top: 99px;
+
+        }
+
+    .additional-info{
+
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-info div h2{
+        font-size: 15px;
+        margin-right: 0;
+    }
+
+    
+    .contact-info div a{
+        font-size: 12px;
+
+    }
+
+    .contact-info div{
+        margin-right: 0px;
+    }
+
+    .contact-info{
+        display: block;
+    }
+    #UsContact{
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: 350px;
+    }
+}
+
+
