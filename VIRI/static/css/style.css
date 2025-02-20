@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 18px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+}
+header{
+
+width: 1440px;
+height: 800px;
+background-color: rgb(178, 226, 175);
+padding-top: 44px;
+}
+.logo{
+    width: 870;
+    height: 500;
+    margin-top: 92px;
+    margin-bottom: 200px;
+    
+}
+.House{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    margin-left: 68px;
+    margin-top: 176px;
+}
+nav{
+
+width: 1078px;
+height: 23px;
+display: flex;
+margin-left: 165px;
+
+
+}
+.nav-list{
+    width: 340px;
+height: 23px;
+display: flex;
+list-style: none;
+}
+a{text-decoration: none;
+margin-left: 52px;
+color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;}
+h2{margin-right: 662px;
+
+}
+.aboutUs{
+    width: 50px;
+    height: 18px;
+    margin: 0;
+}
+h1{color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;}
+.content{
+position: absolute;
+width: 650px;
+height: 483px;
+left: 146px;
+right: 222.18px;
+top: 159px;
+bottom: 158px;
+}
+p{color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 37px;
+}
+.our-project{
+    width: 141px;
+    height: 53px;
+    color: rgb(255, 255, 255);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+background: rgb(92, 176, 86);
+padding-left: 10px;
+border-color: rgb(92, 176, 86);;
+    }
+.our-contacts{
+    width: 148px;
+    height: 53px;
+    color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+background-color: rgb(178, 226, 175);
+padding-left: 11px;
+    
+}
+.bg{
+    
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    background: rgb(255, 255, 255);
+    }
+.left-bg{
+
+width: 445px;
+height: 500px;
+margin-top: 150px;
+margin-left: 165px;
+margin-right: 125px;
+}
+.our-build-enterprice{
+    width: 540px;
+    height: 403px;
+    margin-top: 200px;
+   }
+h3{color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;}
+.description{
+    color: rgb(189, 189, 189);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.experience{display: flex;}
+h4{color: rgb(178, 226, 175);
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.number{
+    color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+.additional-info{
+
+width: 158px;
+height: 83px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 8;
+padding: 0px;
+margin-right: 32px;
+}
+.our-projects{width: 1440px;
+    height:2400px;
+    padding-left: 116px;
+}
+.info-box{
+display: flex;
+margin-bottom: 58px;
+}
+.slogan{color: rgb(189, 189, 189);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    margin-top: 12px;
+}
+.arrow{
+    margin-top: 60px;
+    margin-left: 494px;
+    width: 100px;
+height: 32px;
+display: flex;
+text-align: left;
+}
+.img{width: 350px;
+    height: 465px;
+margin-right: 92px;
+margin-bottom: 52px;}
+.img-box{
+    width: 1400px;
+    height: 2300px;
+}
+footer{
+    width: 1440px;
+    height: 400px;
+    background: rgb(178, 226, 175);
+    padding-top: 90px;
+    display: flex;
+}
+.icons{height: 14px;
+width: 14px;
+margin-right: 10px}
+.name{
+    margin: 0;
+    color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-left: 10px;
+
+}
+.phone{display: flex;
+}
+.contact-info{
+    width: 255px;
+height: 159px;
+text-align: left;
+
+}
+footer div div a{
+    margin: 0;
+}
+.footer-box{
+    display: flex;
+width: 1081px;
+height: 265px;
+margin-left: 165px;
+
+}
+footer div .social-media p {
+    margin: 0;
+}
