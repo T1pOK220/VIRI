@@ -1,5 +1,3 @@
-# Доробити шаблон. Чогось не робить правильно
-
 from flask import Flask, render_template, redirect, url_for, session, request, flash
 import os
 from dotenv import load_dotenv
@@ -9,12 +7,13 @@ app = Flask(__name__)
 
 load_dotenv(dotenv_path="VIRI\\.gitignore\\admin.env")
 
-print(os.getenv("SECRET_KEY"))
+os.getenv("SECRET_KEY")
 app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    projects = get_project_photos()
+    return render_template("index.html", projects = projects)
 
 @app.route("/admin")
 def admin():

@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="ua">
+{% extends "base.html" %}
+
+{% block head %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,92 +11,24 @@
 
     <title>VIRI</title>
 </head>
-<body>
-    <header>
-         <nav>
-             <h2 id="viriHeader">VIRI</h2> 
-                <ul class="nav-list">
-                    <li><a href="#proUs" class="aboutUs">ПРО НАС</a></li>
-                    <li><a href="#UsProject" >ПРОЕКТИ</a></li>
-                    <li><a href="#UsContact" >КОНТАКТИ</a></li>
-                </ul>
-        </nav>
-        <div class="content">
-            <h1>НАДІЙНІСТЬ<br> У КОЖНОМУ<br> ПРОЕКТі</h1>
-            <p>Будівельне підприємство, що втілює ваші мрії в реальність.</p>
-            <button onclick="location.href='#UsProject'" class="our-project">Наші проєкти</button>
-            <button onclick="location.href='#UsContact'" class="our-contacts">Наші контакти</button>
-        </div>
-        <div class="header_img">
-            <img src="{{ url_for('static', filename = 'imgs/House 1.png') }}" alt="" class="House">
-        </div>
-        <img src="{{ url_for('static', filename = 'imgs/logo_cleaned 1.png') }}" class="logo" alt="">
-    </header>
-    <main id="proUs">
-        <div class="bg">
-            <img src="{{ url_for('static', filename = 'imgs/left bg.png') }}" class="left-bg" alt="">
-            <div class="our-build-enterprice"><h3>Наше будівельне підприємство </h3>
-                <p class="description">VIRI - будівельне підприємство, яке виконує повний комплекс будівельних робіт на промислових та приватних об'єктах.Колектив компанії - професіонали з досвідом роботи в середньому від 8 років.Ми ретельно стежимо за інноваціями та впроваджуємо їх 
-                </p>
-               <div class="experience"> <div class="additional-info"><h4>Попередні проекти</h4>
-                <p class="number">87+</p>
-            </div>
-            <div  class="additional-info"><h4>років досвіду</h4>
-                <p class="number">14+</p>
-            </div>
-            <div  class="additional-info"><h4>Поточні проекти</h4>
-                <p class="number">8</p>
-            </div></div>
-            </div>
-        </div>
-        <div class="our-projects">
-            <div id="UsProject" class="info-box"><div><h3>Наші проєкти</h3><br>
-                 <p class="slogan">Будівельне підприємство, що втілює ваші мрії в реальність.</p></div>
-                 <!-- <div class="arrow"><a href=""><img src="{{ url_for('static', filename = 'imgs/Arrow-left.png') }}" alt=""></a>
-                     <a href=""><img src="{{ url_for('static', filename = 'imgs/Arrow-right.png') }}" alt=""></a></div> -->
-             </div>
-                <div class="img-box"><img src="{{ url_for('static', filename = 'imgs/387212686_1494577738043974_8361020222169616090_n 1.png') }}"class="img" alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/436442879_1800067023835991_1628272643060210424_n 1.png') }}" class="img" alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/440972751_1807436666432360_8817114407220203123_n 1.png') }}"  class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/448204027_1833300947179265_7982947492113154992_n 1.png') }}"  class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/459031081_1895067264335966_2331878658201581131_n 1.png') }}" class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/474438179_1994304537745571_3678334941938960213_n 1.png') }}" class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/474624215_1996814367494588_6261331584423651364_n 1.png') }}" class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/475018410_1999181357257889_7262079650218255443_n 1.png') }}" class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/475118027_1999178927258132_8150215351932011862_n 1.png') }}" class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/475119821_1996807890828569_1262982659502682841_n 1.png') }}" class="img"alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/475909189_2005029983339693_850614837103903663_n 1.png') }}" class="img" alt="">
-                    <img src="{{ url_for('static', filename = 'imgs/442476851_1812026552640038_4918008418703854872_n 1.png') }}" class="img" alt="">
-                </div>
-        </div>
-    </main>
-    <footer id="UsContact">
-        <div class="footer-box">
-            <div class="contact-info">
-                <div>
-                    <h2>VIRI</h2>
-                    <a href="https://www.google.com/maps/place/Владимир-Волынский+район,+Волынская+область/@50.8469197,23.9670224,9.31z/data=!4m6!3m5!1s0x47245ef190409b63:0x4aa8dda2ba183b18!8m2!3d50.8956572!4d24.2358874!16s%2Fm%2F06w1vx7?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"><img src="{{ url_for('static', filename = 'imgs/Vector.png') }}" class="icons" alt="">Україна, Волинська область<br> м. Володимир</a><br>
-
-                <div class="phone">
-                    <a href="callto:+38 098 083 0260"><img src="{{ url_for('static', filename = 'imgs/ic_baseline-phone.png') }}" alt=""class="icons">+38 098 083 0260 </a>  <p class="name">Роман</p><br>
-                </div>
-
-                <div class="phone">
-                    <a href="callto:+38 073 409 7213"><img src="{{ url_for('static', filename = 'imgs/ic_baseline-phone.png') }}" alt=""class="icons">+38 073 409 7213 </a> <p class="name">Сергій</p> <br>
-                </div>
-                <a href="mailto:contact@gmail.com"><img src="{{ url_for('static', filename = 'imgs/ic_baseline-email.png') }}"  class="icons"alt="">contact@gmail.com</a>
-
-                <p>Copyright @ 2025 Viri Inc.</p>
-                </div>
+{% endblock %}
+{% block projects %}
+<div class="our-projects">
+    <div id="UsProject" class="info-box"><div><h3>Наші проєкти</h3><br>
+         <p class="slogan">Будівельне підприємство, що втілює ваші мрії в реальність.</p></div>
+         <!-- <div class="arrow"><a href=""><img src="{{ url_for('static', filename = 'imgs/Arrow-left.png') }}" alt=""></a>
+             <a href=""><img src="{{ url_for('static', filename = 'imgs/Arrow-right.png') }}" alt=""></a></div> -->
+     </div>
+        <div class="img-box">
+            {% if projects %}
+                {% for file in projects %}
                 
-                <div class="social-media">
-                    <p class="name">social media</p>
-                    <a href="">Facebook</a><br>
-                    <a href="">TikTok</a>
-                </div>
-                
-            </div>
+                <img src="{{ url_for('static', filename = ('imgs/project-images/' + file)) }}"class="img" alt="">
+            
+                {% endfor %}
+            {% endif %}
+            
         </div>
-    </footer>
-</body>
-</html>
+        
+</div>
+{% endblock %}
