@@ -1,12 +1,15 @@
-from flask import Flask, render_template, redirect, url_for, session, request
-import os
-from dotenv import load_dotenv, dotenv_values
-import bcrypt
+# Доробити шаблон. Чогось не робить правильно
 
-load_dotenv(dotenv_path="VIRI\\.gitignore\\admin.env")
+from flask import Flask, render_template, redirect, url_for, session, request, flash
+import os
+from dotenv import load_dotenv
+import bcrypt
 
 app = Flask(__name__)
 
+load_dotenv(dotenv_path="VIRI\\.gitignore\\admin.env")
+
+print(os.getenv("SECRET_KEY"))
 app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route("/")
@@ -17,7 +20,9 @@ def home():
 def admin():
     if "admin" in session:
         if is_admin(session["admin"][0], session["admin"][1]):
-            return render_template("admin.html")
+            projects = get_project_photos()
+            print(projects)
+            return render_template("admin.html", projects = projects)
     else:
         return redirect(url_for('login'))
 
@@ -38,7 +43,13 @@ def login():
             session["admin"] = [adminUsername, adminPassword]
             return redirect(url_for("admin"))
 
+        flash("Неправильний логін або пароль!")
     return render_template('login.html')
+
+def get_project_photos():
+    files = os.listdir("VIRI\\static\\imgs\\project-images")
+
+    return files
 
 if __name__ == "__main__":
     app.run(debug=True)
