@@ -21,7 +21,6 @@ def admin():
     if "admin" in session:
         if is_admin(session["admin"][0], session["admin"][1]):
             projects = get_project_photos()
-            print(projects)
             return render_template("admin.html", projects = projects)
     else:
         return redirect(url_for('login'))
