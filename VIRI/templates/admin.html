@@ -24,7 +24,7 @@
                 {% for file in projects %}
             <div>
                 <img src="{{ url_for('static', filename = ('imgs/project-images/' + file)) }}"class="img" alt=""><br>
-                <button class="delete">Видалити фото</button>
+                <button class="delete" onclick="delete_photo('{{ file }}')">Видалити фото</button>
             </div>
                 {% endfor %}
             {% endif %}
@@ -32,4 +32,8 @@
         </div>
         <button class="add-photo">Додати фото</button>
 </div>
+{% endblock %}
+
+{% block script %}
+<script src = "{{ url_for('static', filename = 'js/admin.js') }}"></script>
 {% endblock %}
