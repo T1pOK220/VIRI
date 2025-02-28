@@ -27,7 +27,7 @@ function addPhoto() {
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ photo_name: photoURL })
+                    body: JSON.stringify({ photo_Url: photoURL })
                 })
                 .then(response => response.json())
                 .then(data => {
@@ -42,3 +42,4 @@ function addPhoto() {
         }
     });
 }
+
