@@ -14,13 +14,13 @@ app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route("/")
 def home():
-    projects = sorted(get_project_photos(), key=lambda x: int(x.split(".")[0]))
+    projects = sorted(get_project_photos(), key=lambda x: os.path.getmtime(PROJECT_IMAGES_PATH + "\\" +x))
     return render_template("index.html", projects = projects)
 
 @app.route("/admin")
 def admin():
     if "admin" in session:
-        projects = sorted(get_project_photos(), key=lambda x: int(x.split(".")[0]))
+        projects = sorted(get_project_photos(), key=lambda x: os.path.getmtime(PROJECT_IMAGES_PATH + "\\" + x))
         return render_template("admin.html", projects = projects)
     else:
         return redirect(url_for('login'))
@@ -61,10 +61,7 @@ def add_photo():
 
         file = request.files["file"]
 
-        projectPhotosCount = len(get_project_photos())
-
-        filename = str(projectPhotosCount + 1) + "." + file.filename.split(".")[-1]
-        filepath = PROJECT_IMAGES_PATH + "\\" + filename
+        filepath = PROJECT_IMAGES_PATH + "\\" + file.filename
         file.save(filepath)
         
         return jsonify({"message": "Файл успішно додано"})
