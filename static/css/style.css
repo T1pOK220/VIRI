@@ -16,10 +16,12 @@ body{
 html {
     scroll-behavior: smooth;
 }
+.header_img{
+    position: relative;
+    overflow: hidden;
+}
 
 header{
-
-
 
 background-color: rgb(178, 226, 175);
 padding-top: 44px;
@@ -86,8 +88,6 @@ h1{
     text-align: left;}
 .content{
 position: absolute;
-width: 650px;
-height: 483px;
 left: 146px;
 right: 222.18px;
 top: 159px;
@@ -206,7 +206,7 @@ margin-top: 15px;
 }
 .our-projects{
 
-    padding-left: 116px;
+    padding-left: 0px;
 }
 .info-box{
 display: flex;
@@ -302,10 +302,58 @@ footer div .social-media p {
 }
 
 
+.img-box{
+    display: grid;
+    grid-template-columns: repeat(3,auto); /* Автоматична підгонка */
+    grid-template-rows: repeat(4,auto); /* Три рядки */
+    gap: 92px;
+    justify-content: center;
+    
+}
+.delete{
+    color: rgb(255, 255, 255);
+    width: 380px;
+    height: 50px;
+    margin-top: 40px;
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    background: rgb(92, 176, 86);
+        padding: 18px 24px;
+    border-color: rgb(92, 176, 86);;
+    border: none;
+}
+.add-photo{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 14px;
+    width: 100%;
+    margin-top:50px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    background: rgb(92, 176, 86);
+        padding: 18px 24px;
+    border-color: rgb(92, 176, 86);;
+    border: none;
+}
 
-@media(min-width: 1200px){
+@media(min-width: 1400px) and (max-width: 1900px ){
+
+    .img{
+        height: auto;
+        width: 110%;
+    }
+
+    .img-box{
+        gap: 100px;
+    }
     .our-projects{
-        padding-left: 170px;
+        padding-left: 0px;
     }
 
 
@@ -334,7 +382,213 @@ footer div .social-media p {
     }
 
     .social-media{
-        margin-right: -900px;
+        margin-right: -770px;
+    }
+
+    .logo{
+        position: absolute;
+        width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
+    }
+    .House{
+        width: 45%;
+        position: absolute;
+        transform: translate(136%, -5.5%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+
+
+}
+
+
+@media(min-width: 1280px) and (max-width: 1399px ) {
+    
+    .img{
+        height: auto;
+        width: 100%;
+    }
+
+    .img-box{
+        gap: 70px;
+    }
+   
+    .our-projects{
+        padding-left: 0px;
+    }
+
+
+    .contact-info div h2{
+
+        margin-right: 0;
+    }
+
+    #UsContact{
+        height: 350px;
+    }
+
+    .social-media {
+        margin-left: 0px;
+    }
+
+
+
+    .contact-info div{
+        width: 300px;
+    }
+
+    .contact-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        margin-right: -770px;
+    }
+
+    .logo{
+        position: absolute;
+        width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
+    }
+    .House{
+        width: 45%;
+        position: absolute;
+        transform: translate(136%, 1%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+}
+
+
+@media(min-width: 1200px) and (max-width: 1279px ){
+
+    .img{
+        height: auto;
+        width: 100%;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+
+    .contact-info div h2{
+
+        margin-right: 0;
+    }
+
+    #UsContact{
+        height: 350px;
+    }
+
+    .social-media {
+        margin-left: 0px;
+    }
+
+
+
+    .contact-info div{
+        width: 300px;
+    }
+
+    .contact-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        margin-right: -770px;
+    }
+
+    .logo{
+        position: absolute;
+        width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
+    }
+    .House{
+        width: 45%;
+        position: absolute;
+        transform: translate(136%, 8%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+    .img-box{
+        gap: 55px;
     }
 
 }
@@ -344,6 +598,7 @@ footer div .social-media p {
         width: 50%;
         position: absolute;
         transform: translate(135%, 18%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
     
     }
 
@@ -357,24 +612,71 @@ footer div .social-media p {
     }
 
     .logo{
+        position: absolute;
         width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
     }
 
     .img{
-        margin-right: 72px;
-        margin-bottom: 32px;
+        height: auto;
+        width: 290px;
+        margin-right: 0px;
+        margin-bottom: 0px;
     }
     .social-media {
         margin-left: 0px;
     }
 
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+    .our-projects{
+        padding-left: 10px;
+    }
+
+    .img-box{
+        gap: 35px;
+    }
+
+    .contact-info div{
+        width: 500px;
+    }
+
+
 }
 
 @media(min-width: 768px) and (max-width: 1023px ){
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
     .House{
-        width: 30%;
+        width: 40%;
         position: absolute;
-        transform: translate(250%, 45%);
+        transform: translate(164%, 15%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
     
     }
 
@@ -393,14 +695,17 @@ footer div .social-media p {
     }
 
     .logo{
+        position: absolute;
         width: 500px;
         height: auto;
-        margin-bottom: 100px;
+        margin-bottom: -20px;
+        margin-top: -361px;
+        z-index: 1;
     }
 
     .img{
-        width: 300px;
-        height: 415px;
+        width: 200px;
+        height: auto;
         margin-right: 22px;
         margin-bottom: 32px;
     }
@@ -448,7 +753,35 @@ footer div .social-media p {
         font-size: 30px;
     }
     .our-projects{
-        padding-left: 70px;
+        padding-left: 25px;
+    }
+
+    .img-box{
+        gap: 12px;
+    }
+
+    .contact-info div{
+        width: 620px;
+    }
+
+    .footer-box{
+        margin-left: 80px;
+    }
+
+    .header_img{
+        width: auto;
+        height: 398px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
     }
 
 }
@@ -482,13 +815,17 @@ footer div .social-media p {
     }
 
     .img{
-        width: 200px;
-        height: 315px;
-        margin-right: 22px;
-        margin-bottom: 32px; 
+        width: 160px;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 0; 
+    }
+
+    .img-box{
+        gap: 35px;
     }
     .social-media {
-        margin-left: -260px;
+        margin-left: -120px;
     }
 
     h1{
@@ -532,7 +869,7 @@ footer div .social-media p {
         font-size: 30px;
     }
     .our-projects{
-        padding-left: 70px;
+        padding-left: 0px;
     }
 
     nav{
@@ -546,10 +883,20 @@ footer div .social-media p {
         margin-left: 30px;
     }
 
+    .contact-info div{
+        width: 550px;
+    }
+
+
 
 }
 
 @media(max-width: 575px ){
+
+    .img-box{
+        gap: 10px;
+    }
+
     .House{
         width: 40%;
         position: absolute;
@@ -574,15 +921,16 @@ footer div .social-media p {
     }
 
     .logo{
-        width: 280px;
+        width: 330px;
         height: auto;
         margin-bottom: 100px;
+        margin-left: 25px;
 
     }
 
     .img{
-         width: 145px;
-        height: 260px;
+        width: 110px;
+        height: auto;
         margin-right: 8px;
         margin-bottom: 32px;
     }
@@ -591,31 +939,36 @@ footer div .social-media p {
     }
 
     h1{
+        width: 200px;
         font-size: 30px;
-        margin-top: -65px;
-        margin-left: -100px;
+        margin-top: 0px;
+        margin-left: -40px;
     }
 
     .content p{
         font-size: 6px;
+        margin-left: -38px;
     }
 
     .our-project{
         font-size: 8px;
         padding: 7px 10px;
         margin-right: 16px;
+        margin-left: -37px;
         }
     .our-contacts{
         width: 90px;
         height: 24px;  
         font-size: 8px;
         padding-left: 11px;
+
         
     }
 
     h3{
         font-size: 22px;
         text-align: center;
+        width: auto;
     }
 
     .description{
@@ -624,7 +977,9 @@ footer div .social-media p {
         margin: 0;
         margin-top: 30px;
         margin-bottom: 20px;
-        margin-left: 10px;
+        margin-left: 30px;
+        width: 335px;
+        text-align: center;
     }
 
     h4{
@@ -635,11 +990,11 @@ footer div .social-media p {
         font-size: 30px;
     }
     .our-projects{
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     nav{
-        margin-left: 19px;
+        margin-left: 45px;
     }
     .nav-list li a{
         font-size: 10px;
@@ -651,17 +1006,16 @@ footer div .social-media p {
 
     .content{
         position: absolute;
-        width: 650px;
-        height: 483px;
-        left: 87px;
+        left: 137px;
         top: 99px;
+        width: 200px;
 
         }
 
     .additional-info{
-
         text-align: center;
         align-items: center;
+        margin-right: 23px;
     }
 
     .contact-info div h2{
@@ -688,43 +1042,21 @@ footer div .social-media p {
         padding: 0;
         height: 350px;
     }
-}
-.img-box{
-    display: grid;
-    grid-template-columns: repeat(3,auto); /* Автоматична підгонка */
-    grid-template-rows: repeat(4,auto); /* Три рядки */
-    gap: 92px;;
-    justify-content: center;
-    
-}
-.delete{
-    color: rgb(255, 255, 255);
-    width: 380px;
-    height: 50px;
-    margin-top: 40px;
-    font-family: Mulish;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: center;
-    background: rgb(92, 176, 86);
-        padding: 18px 24px;
-    border-color: rgb(92, 176, 86);;
-    border: none;
-}
-.add-photo{
-    color: rgb(255, 255, 255);
-    font-family: Mulish;
-    font-size: 14px;
-    width: 100%;
-    margin-top:50px;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: center;
-    background: rgb(92, 176, 86);
-        padding: 18px 24px;
-    border-color: rgb(92, 176, 86);;
-    border: none;
+    .slogan{
+        width: 350px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .our-build-enterprice h3{
+        width: 360px;
+    }
+
+    .our-build-enterprice{
+        margin-top: 150px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+
+    }
 }
