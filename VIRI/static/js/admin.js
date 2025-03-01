@@ -15,31 +15,20 @@ function delete_photo(photoName) {
         }
     })
 }
-function addPhoto() {
-    document.getElementById("upload-profile-pic").addEventListener("change", function(event) {
-        let file = event.target.files[0];
-        if (file) {
-            let reader = new FileReader();
-            reader.onload = function(e) {
-                let photoURL = e.target.result;
-                fetch('/add-photo', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ photo_Url: photoURL })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        location.reload();
-                    } else {
-                        alert("Не вдалося завантажити фото");
-                    }
-                });
-            };
-            reader.readAsDataURL(file);
-        }
+
+document.getElementById("upload-profile-pic").addEventListener("change", async function (event) {
+    event.preventDefault(); 
+
+    let fileInput = document.getElementById("upload-profile-pic").files[0];
+    let formData = new FormData();
+    formData.append("file", fileInput);
+
+    let response = await fetch("/add-photo", {
+        method: "POST",
+        body: formData
     });
-}
+
+    let result = await response.text();
+    location.reload();
+});
 

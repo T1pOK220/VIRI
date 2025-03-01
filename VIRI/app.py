@@ -7,22 +7,21 @@ app = Flask(__name__)
 
 PROJECT_IMAGES_PATH = "VIRI\\static\\imgs\\project-images"
 
-load_dotenv(dotenv_path="VIRI\\.gitignore\\admin.env")
+load_dotenv(dotenv_path="VIRI\\admin\\admin.env")
 
 os.getenv("SECRET_KEY")
 app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route("/")
 def home():
-    projects = get_project_photos()
+    projects = sorted(get_project_photos(), key=lambda x: int(x.split(".")[0]))
     return render_template("index.html", projects = projects)
 
 @app.route("/admin")
 def admin():
     if "admin" in session:
-        if is_admin(session["admin"][0], session["admin"][1]):
-            projects = get_project_photos()
-            return render_template("admin.html", projects = projects)
+        projects = sorted(get_project_photos(), key=lambda x: int(x.split(".")[0]))
+        return render_template("admin.html", projects = projects)
     else:
         return redirect(url_for('login'))
 
@@ -52,6 +51,27 @@ def delete_photo():
     else:
         flash("Спершу вам потрібно авторизуватись!")
         return redirect(url_for("login"))
+    
+@app.route("/add-photo", methods = ["POST"])
+def add_photo():
+    if "admin" in session:
+      
+        if "file" not in request.files:
+            return jsonify({"message": "Файл не знайдено"}), 400
+
+        file = request.files["file"]
+
+        projectPhotosCount = len(get_project_photos())
+
+        filename = str(projectPhotosCount + 1) + "." + file.filename.split(".")[-1]
+        filepath = PROJECT_IMAGES_PATH + "\\" + filename
+        file.save(filepath)
+        
+        return jsonify({"message": "Файл успішно додано"})
+    else:
+        flash("Спершу потрібно авторизуватись!")
+        return(url_for(login))
+
 
 @app.route('/login', methods = ["GET", "POST"])
 def login():
@@ -60,7 +80,7 @@ def login():
         adminPassword = request.form.get("password")
         
         if is_admin(adminUsername, adminPassword):
-            session["admin"] = [adminUsername, adminPassword]
+            session["admin"] = True
             return redirect(url_for("admin"))
 
         flash("Неправильний логін або пароль!")
