@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <title>VIRI</title>
+</head>
+{% endblock %}
+{% block projects %}
+<div class="our-projects">
+    <div id="UsProject" class="info-box"><div><h3>Наші проєкти</h3><br>
+         <p class="slogan">Будівельне підприємство, що втілює ваші мрії в реальність.</p></div>
+         <!-- <div class="arrow"><a href=""><img src="{{ url_for('static', filename = 'imgs/Arrow-left.png') }}" alt=""></a>
+             <a href=""><img src="{{ url_for('static', filename = 'imgs/Arrow-right.png') }}" alt=""></a></div> -->
+     </div>
+        <div class="img-box">
+            {% if projects %}
+                {% for file in projects %}
+            <div>
+                <img src="{{ url_for('static', filename = ('imgs/project-images/' + file)) }}"class="img" alt=""><br>
+                <button class="delete" onclick="delete_photo('{{ file }}')">Видалити фото</button>
+            </div>
+                {% endfor %}
+            {% endif %}
+         <div>
+            <input type="file"  id="upload-profile-pic" hidden>
+        <button type="submit" class="add-photo" onclick="document.getElementById('upload-profile-pic').click()" >Додати фото</button>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script src = "{{ url_for('static', filename = 'js/admin.js') }}"></script>
+{% endblock %}
