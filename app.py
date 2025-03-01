@@ -5,7 +5,7 @@ import bcrypt
 
 app = Flask(__name__)
 
-PROJECT_IMAGES_PATH = "static/imgs/project-images"
+PROJECT_IMAGES_PATH = "static/imgs/project-images/"
 
 load_dotenv(dotenv_path="admin/admin.env")
 
@@ -14,13 +14,13 @@ app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route("/")
 def home():
-    projects = sorted(get_project_photos(), key=lambda x: os.path.getmtime(PROJECT_IMAGES_PATH + "\\" +x))
+    projects = sorted(get_project_photos(), key=lambda x: os.path.getmtime(PROJECT_IMAGES_PATH + x))
     return render_template("index.html", projects = projects)
 
 @app.route("/admin")
 def admin():
     if "admin" in session:
-        projects = sorted(get_project_photos(), key=lambda x: os.path.getmtime(PROJECT_IMAGES_PATH + "\\" + x))
+        projects = sorted(get_project_photos(), key=lambda x: os.path.getmtime(PROJECT_IMAGES_PATH + x))
         return render_template("admin.html", projects = projects)
     else:
         return redirect(url_for('login'))
@@ -41,7 +41,7 @@ def delete_photo():
         if not photoName:
             return jsonify({'success': False, 'message': "Фото не знайдено"})
         
-        photoPath = PROJECT_IMAGES_PATH + "/" + photoName
+        photoPath = PROJECT_IMAGES_PATH + photoName
 
         if os.path.exists(photoPath):
             os.remove(photoPath)
@@ -61,7 +61,7 @@ def add_photo():
 
         file = request.files["file"]
 
-        filepath = PROJECT_IMAGES_PATH + "/" + file.filename
+        filepath = PROJECT_IMAGES_PATH + file.filename
         file.save(filepath)
         
         return jsonify({"message": "Файл успішно додано"})
