@@ -5,9 +5,9 @@ import bcrypt
 
 app = Flask(__name__)
 
-PROJECT_IMAGES_PATH = "VIRI\\static\\imgs\\project-images"
+PROJECT_IMAGES_PATH = "static\\imgs\\project-images"
 
-load_dotenv(dotenv_path="VIRI\\admin\\admin.env")
+load_dotenv(dotenv_path="admin\\admin.env")
 
 os.getenv("SECRET_KEY")
 app.secret_key = os.getenv("SECRET_KEY")
@@ -84,7 +84,7 @@ def login():
     return render_template('login.html')
 
 def get_project_photos():
-    files = os.listdir("VIRI\\static\\imgs\\project-images")
+    files = os.listdir(PROJECT_IMAGES_PATH)
 
     return files
 
