@@ -346,7 +346,7 @@ footer div .social-media p {
 
     .img{
         height: auto;
-        width: 110%;
+        width: 380px;
     }
 
     .img-box{
@@ -422,7 +422,9 @@ footer div .social-media p {
         z-index: 2;
     }
 
-
+    .info-box div{
+        margin-left: 100px;
+    }
 
 }
 
@@ -431,7 +433,7 @@ footer div .social-media p {
     
     .img{
         height: auto;
-        width: 100%;
+        width: 340px;
     }
 
     .img-box{
@@ -515,7 +517,7 @@ footer div .social-media p {
 
     .img{
         height: auto;
-        width: 100%;
+        width: 340px;
     }
     .our-projects{
         padding-left: 0px;
