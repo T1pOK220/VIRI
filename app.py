@@ -5,9 +5,9 @@ import bcrypt
 
 app = Flask(__name__)
 
-PROJECT_IMAGES_PATH = "static\\imgs\\project-images"
+PROJECT_IMAGES_PATH = "static/imgs/project-images"
 
-load_dotenv(dotenv_path="admin\\admin.env")
+load_dotenv(dotenv_path="admin/admin.env")
 
 os.getenv("SECRET_KEY")
 app.secret_key = os.getenv("SECRET_KEY")
@@ -41,7 +41,7 @@ def delete_photo():
         if not photoName:
             return jsonify({'success': False, 'message': "Фото не знайдено"})
         
-        photoPath = PROJECT_IMAGES_PATH + "\\" + photoName
+        photoPath = PROJECT_IMAGES_PATH + "/" + photoName
 
         if os.path.exists(photoPath):
             os.remove(photoPath)
@@ -61,7 +61,7 @@ def add_photo():
 
         file = request.files["file"]
 
-        filepath = PROJECT_IMAGES_PATH + "\\" + file.filename
+        filepath = PROJECT_IMAGES_PATH + "/" + file.filename
         file.save(filepath)
         
         return jsonify({"message": "Файл успішно додано"})
