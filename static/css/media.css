@@ -1349,6 +1349,21 @@
 
 @media(min-width: 401px) and (max-width: 503px){
 
+    
+    .img-box div {
+        width: 105px;
+    }
+
+    .delete{
+        font-size: 7px;
+    }
+
+    .add-photo{
+        font-size: 15px;
+        width: 356%;
+    }
+
+
     .experience {
         display: flex;
         justify-content: center;
@@ -1558,6 +1573,21 @@
 
 @media(min-width: 300px) and (max-width: 400px){
 
+    .img-box div {
+        width: 70px;
+    }
+
+    .delete{
+        font-size: 4px;
+    }
+
+    .add-photo{
+        font-size: 12px;
+        width: 387%;
+    }
+
+
+
     .experience {
         display: flex;
         justify-content: center;
@@ -1765,6 +1795,19 @@
 
 
 @media(min-width: 200px) and (max-width: 299px){
+
+    .img-box div {
+        width: 60px;
+    }
+
+    .delete{
+        font-size: 4px;
+    }
+
+    .add-photo{
+        font-size: 12px;
+        width: 345%;
+    }
 
     .experience {
         display: flex;
