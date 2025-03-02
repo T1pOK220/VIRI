@@ -1,0 +1,1969 @@
+@media(min-width: 1400px) and (max-width: 1900px ){
+
+    .img{
+        height: auto;
+        width: 380px;
+    }
+
+    .img-box{
+        gap: 100px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+
+    .contact-info div h2{
+
+        margin-right: 0;
+    }
+
+    #UsContact{
+        height: 350px;
+    }
+
+    .social-media {
+        margin-left: 0px;
+    }
+
+
+
+    .contact-info div{
+        width: 300px;
+    }
+
+    .contact-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        margin-right: -770px;
+    }
+
+    .logo{
+        position: absolute;
+        width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
+    }
+    .House{
+        width: 45%;
+        position: absolute;
+        transform: translate(136%, -5.5%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+    .info-box div{
+        margin-left: 100px;
+    }
+
+}
+
+
+@media(min-width: 1280px) and (max-width: 1399px ) {
+    
+    .img{
+        height: auto;
+        width: 340px;
+    }
+
+    .img-box{
+        gap: 70px;
+    }
+   
+    .our-projects{
+        padding-left: 0px;
+    }
+
+
+    .contact-info div h2{
+
+        margin-right: 0;
+    }
+
+    #UsContact{
+        height: 350px;
+    }
+
+    .social-media {
+        margin-left: 0px;
+    }
+
+
+
+    .contact-info div{
+        width: 300px;
+    }
+
+    .contact-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        margin-right: -770px;
+    }
+
+    .logo{
+        position: absolute;
+        width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
+    }
+    .House{
+        width: 45%;
+        position: absolute;
+        transform: translate(136%, 1%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+}
+
+
+@media(min-width: 1200px) and (max-width: 1279px ){
+
+    .img{
+        height: auto;
+        width: 340px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+
+    .contact-info div h2{
+
+        margin-right: 0;
+    }
+
+    #UsContact{
+        height: 350px;
+    }
+
+    .social-media {
+        margin-left: 0px;
+    }
+
+
+
+    .contact-info div{
+        width: 300px;
+    }
+
+    .contact-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        margin-right: -770px;
+    }
+
+    .logo{
+        position: absolute;
+        width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
+    }
+    .House{
+        width: 45%;
+        position: absolute;
+        transform: translate(136%, 8%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+    .img-box{
+        gap: 55px;
+    }
+
+}
+
+@media(min-width: 1024px) and (max-width: 1199px ){
+    .House{
+        width: 50%;
+        position: absolute;
+        transform: translate(135%, 18%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    #viriHeader{
+        margin-right: 450px;
+    }
+
+    .left-bg{
+        margin-left: 50px;
+        margin-right: 70px;
+    }
+
+    .logo{
+        position: absolute;
+        width: 800px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -647px;
+        z-index: 1;
+    }
+
+    .img{
+        height: auto;
+        width: 290px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img{
+        width: auto;
+        height: 655px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+    .our-projects{
+        padding-left: 10px;
+    }
+
+    .img-box{
+        gap: 35px;
+    }
+
+    .contact-info div{
+        width: 500px;
+    }
+
+
+}
+
+@media(min-width: 900px) and (max-width: 1023px ){
+    header{
+        position: relative;
+        z-index: 2;
+    }
+    .House{
+        width: 50%;
+        position: absolute;
+        transform: translate(624px, -55px);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    #viriHeader{
+        margin-right: 150px;
+    }
+
+    .left-bg{
+        margin-left: 50px;
+        margin-right: 30px;
+        
+        width: 345px;
+        height: 400px;
+        margin-top: 180px;
+
+    }
+
+    .logo{
+        position: absolute;
+        width: 500px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -437px;
+        z-index: 1;
+    }
+
+    .img{
+        width: 200px;
+        height: auto;
+        margin-right: 22px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: -250px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .content p{
+        font-size: 10px;
+    }
+
+    .our-project{
+        font-size: 10px;
+        padding: 11px 15px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 108px;
+        height: 33px;  
+        font-size: 10px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 25px;
+    }
+
+    .img-box{
+        gap: 12px;
+    }
+
+    .contact-info div{
+        width: 620px;
+    }
+
+    .footer-box{
+        margin-left: 80px;
+    }
+
+    .header_img{
+        width: auto;
+        height: 470px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+}
+
+@media(min-width: 805px) and (max-width: 899px){
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+    .House{
+        width: 50%;
+        position: absolute;
+        transform: translate(510px, -47px);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    #viriHeader{
+        margin-right: 150px;
+    }
+
+    .left-bg{
+        margin-left: 50px;
+        margin-right: 30px;
+        
+        width: 345px;
+        height: 400px;
+        margin-top: 180px;
+
+    }
+
+    .logo{
+        position: absolute;
+        width: 500px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -361px;
+        z-index: 1;
+    }
+
+    .img{
+        width: 200px;
+        height: auto;
+        margin-right: 22px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: -250px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .content p{
+        font-size: 10px;
+    }
+
+    .our-project{
+        font-size: 10px;
+        padding: 11px 15px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 108px;
+        height: 33px;  
+        font-size: 10px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 25px;
+    }
+
+    .img-box{
+        gap: 12px;
+    }
+
+    .contact-info div{
+        width: 620px;
+    }
+
+    .footer-box{
+        margin-left: 80px;
+    }
+
+    .header_img{
+        width: auto;
+        height: 398px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 804px ){
+
+    header{
+        position: relative;
+        z-index: 2;
+    }
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(164%, 15%);
+        clip-path: inset(0 calc(5.1vw) 0 0);
+    
+    }
+
+    #viriHeader{
+        margin-right: 150px;
+    }
+
+    .left-bg{
+        margin-left: 50px;
+        margin-right: 30px;
+        
+        width: 345px;
+        height: 400px;
+        margin-top: 180px;
+
+    }
+
+    .logo{
+        position: absolute;
+        width: 500px;
+        height: auto;
+        margin-bottom: -20px;
+        margin-top: -361px;
+        z-index: 1;
+    }
+
+    .img{
+        width: 200px;
+        height: auto;
+        margin-right: 22px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: -250px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .content p{
+        font-size: 10px;
+    }
+
+    .our-project{
+        font-size: 10px;
+        padding: 11px 15px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 108px;
+        height: 33px;  
+        font-size: 10px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 25px;
+    }
+
+    .img-box{
+        gap: 12px;
+    }
+
+    .contact-info div{
+        width: 620px;
+    }
+
+    .footer-box{
+        margin-left: 80px;
+    }
+
+    .header_img{
+        width: auto;
+        height: 398px;
+    }
+    
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        height: 260px;
+        z-index: 2;
+    }
+
+}
+
+
+
+@media(min-width: 683px) and (max-width: 767px ){
+
+    .header_img{
+        height: 360px;
+    }
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        z-index: 2;
+    }
+
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(485px, 60px);
+    
+    }
+
+    #viriHeader{
+        margin-right: 50px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+
+    }
+
+    .logo{
+        position: absolute;
+        width: 445px;
+        height: auto;
+        margin-bottom: 0;
+        margin-top: -371px;
+        z-index: 1;
+    }
+
+    .img{
+        width: 160px;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 0; 
+    }
+
+    .img-box{
+        gap: 35px;
+    }
+    .social-media {
+        margin-left: -120px;
+    }
+
+    h1{
+        font-size: 35px;
+        margin-top: -30px;
+    }
+
+    .content p{
+        font-size: 8px;
+    }
+
+    .our-project{
+        font-size: 10px;
+        padding: 11px 15px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 108px;
+        height: 33px;  
+        font-size: 10px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    .description{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 65px;
+    }
+    .nav-list li a{
+        font-size: 10px;
+    }
+
+    .footer-box{
+        margin-left: 30px;
+    }
+
+    .contact-info div{
+        width: 550px;
+    }
+
+
+
+}
+
+
+@media(min-width: 616px) and (max-width: 682px ){
+
+    .header_img{
+        height: 360px;
+    }
+
+    .content{
+        position: absolute;
+        left: 146px;
+        right: 222.18px;
+        top: 159px;
+        bottom: 158px;
+        z-index: 2;
+    }
+
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(450px, 80px);
+    
+    }
+
+    #viriHeader{
+        margin-right: 50px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+
+    }
+
+    .logo{
+        position: absolute;
+        width: 445px;
+        height: auto;
+        margin-bottom: 0;
+        margin-top: -371px;
+        z-index: 1;
+    }
+
+    .img{
+        width: 160px;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 0; 
+    }
+
+    .img-box{
+        gap: 35px;
+    }
+    .social-media {
+        margin-left: -120px;
+    }
+
+    h1{
+        font-size: 35px;
+        margin-top: -30px;
+    }
+
+    .content p{
+        font-size: 8px;
+    }
+
+    .our-project{
+        font-size: 10px;
+        padding: 11px 15px;
+        margin-right: 16px;
+        }
+    .our-contacts{
+        width: 108px;
+        height: 33px;  
+        font-size: 10px;
+        padding-left: 11px;
+        
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    .description{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 65px;
+    }
+    .nav-list li a{
+        font-size: 10px;
+    }
+
+    .footer-box{
+        margin-left: 30px;
+    }
+
+    .contact-info div{
+        width: 550px;
+    }
+
+
+
+}
+
+@media(min-width: 576px) and (max-width: 615px){
+
+    .experience {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_img{
+        position: relative;
+        overflow: hidden;
+        height: 315px;
+    }
+
+    .img-box{
+        gap: 30px;
+    }
+
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(177%, 59%);
+        display: none;
+    
+    }
+
+    #viriHeader{
+        margin-right: 3px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        width: 415px;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 10%;
+        margin-top: -335px;
+        z-index: 1;
+
+    }
+
+    .img{
+        width: 150px;
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+    h1{
+        width: 302px;
+        font-size: 44px;
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .content p{
+        font-size: 11px;
+        margin-left: 2px;
+        width: 345px;
+        margin-bottom: 20px;
+    }
+
+    .our-project{
+        font-size: 7px;
+        padding: 4px 5px;
+        margin-right: 18px;
+        margin-left: 0px;
+        }
+    .our-contacts{
+        width: 60px;
+        height: 17px;
+        font-size: 6px;
+        padding-left: 3px;
+
+        
+    }
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+        width: auto;
+    }
+
+    .description{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .number{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .nav-list li a{
+        font-size: 8px;
+        margin-left: 40px;
+    }
+
+    .footer-box{
+        margin-left: 15px;
+        width: 175px;
+    }
+
+    .content{
+        position: absolute;
+        left: 25%;
+        top: 8%;
+        width: 160px;
+        z-index: 2;
+
+}
+
+    .additional-info{
+        text-align: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .contact-info div h2{
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    
+    .contact-info div a{
+        font-size: 15px;
+
+    }
+
+    .contact-info div{
+        margin-right: 0px;
+        width: 280px;
+    }
+
+    .contact-info{
+        display: flex;
+        gap: 130px;
+    }
+    #UsContact{
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: 350px;
+    }
+    .slogan{
+        width: auto;
+        margin-left: 0px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .our-build-enterprice h3{
+        width: auto;
+    }
+
+    .our-build-enterprice{
+        margin-top: 150px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .name{
+        font-size: 9px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    header{
+        padding-top: 10px;
+    }
+}
+
+@media(min-width: 504px) and (max-width: 575px){
+
+    .experience {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_img{
+        position: relative;
+        overflow: hidden;
+        height: 315px;
+    }
+
+    .img-box{
+        gap: 30px;
+    }
+
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(177%, 59%);
+        display: none;
+    
+    }
+
+    #viriHeader{
+        margin-right: 3px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        width: 355px;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 10%;
+        margin-top: -335px;
+        z-index: 1;
+
+    }
+
+    .img{
+        width: 135px;
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+    h1{
+        width: 296px;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .content p{
+        font-size: 8px;
+        margin-left: 2px;
+        width: 285px;
+        margin-bottom: 20px;
+    }
+
+    .our-project{
+        font-size: 7px;
+        padding: 8px 12px;
+        margin-right: 18px;
+        margin-left: 0px;
+        }
+    .our-contacts{
+        width: 80px;
+        height: 23px;
+        font-size: 6px;
+        padding-left: 12px;
+
+        
+    }
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+        width: auto;
+    }
+
+    .description{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .number{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .nav-list li a{
+        font-size: 8px;
+        margin-left: 40px;
+    }
+
+    .footer-box{
+        margin-left: 15px;
+        width: 175px;
+    }
+
+    .content{
+        position: absolute;
+        left: 24%;
+        top: 8%;
+        width: 240px;
+        z-index: 2;
+
+}
+
+    .additional-info{
+        text-align: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .contact-info div h2{
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    
+    .contact-info div a{
+        font-size: 10px;
+
+    }
+
+    .contact-info div{
+        margin-right: 0px;
+        width: 280px;
+    }
+
+    .contact-info{
+        display: flex;
+        gap: 85px;
+    }
+    #UsContact{
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: 350px;
+    }
+    .slogan{
+        width: auto;
+        margin-left: 0px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .our-build-enterprice h3{
+        width: auto;
+    }
+
+    .our-build-enterprice{
+        margin-top: 150px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .name{
+        font-size: 9px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    header{
+        padding-top: 10px;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 503px){
+
+    .experience {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_img{
+        position: relative;
+        overflow: hidden;
+        height: 315px;
+    }
+
+    .img-box{
+        gap: 30px;
+    }
+
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(177%, 59%);
+        display: none;
+    
+    }
+
+    #viriHeader{
+        margin-right: 3px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        width: 355px;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 10%;
+        margin-top: -335px;
+        z-index: 1;
+
+    }
+
+    .img{
+        width: 103px;
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+    h1{
+        width: 296px;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .content p{
+        font-size: 8px;
+        margin-left: 2px;
+        width: 285px;
+        margin-bottom: 20px;
+    }
+
+    .our-project{
+        font-size: 7px;
+        padding: 4px 5px;
+        margin-right: 18px;
+        margin-left: 0px;
+        }
+    .our-contacts{
+        width: 60px;
+        height: 17px;
+        font-size: 6px;
+        padding-left: 3px;
+
+        
+    }
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+        width: auto;
+    }
+
+    .description{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .number{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .nav-list li a{
+        font-size: 8px;
+        margin-left: 40px;
+    }
+
+    .footer-box{
+        margin-left: 15px;
+        width: 175px;
+    }
+
+    .content{
+        position: absolute;
+        left: 18%;
+        top: 8%;
+        width: 160px;
+        z-index: 2;
+
+}
+
+    .additional-info{
+        text-align: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .contact-info div h2{
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    
+    .contact-info div a{
+        font-size: 10px;
+
+    }
+
+    .contact-info div{
+        margin-right: 0px;
+        width: 280px;
+    }
+
+    .contact-info{
+        display: flex;
+        gap: 0px;
+    }
+    #UsContact{
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: 350px;
+    }
+    .slogan{
+        width: auto;
+        margin-left: 0px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .our-build-enterprice h3{
+        width: auto;
+    }
+
+    .our-build-enterprice{
+        margin-top: 150px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .name{
+        font-size: 9px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    header{
+        padding-top: 10px;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 400px){
+
+    .experience {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_img{
+        position: relative;
+        overflow: hidden;
+        height: 240px;
+    }
+
+    .img-box{
+        gap: 30px;
+    }
+
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(177%, 59%);
+        display: none;
+    
+    }
+
+    #viriHeader{
+        margin-right: 3px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        width: 280px;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 8%;
+        margin-top: -64%;
+        z-index: 1;
+
+    }
+
+    .img{
+        width: 80px;
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+    h1{
+        width: 200px;
+        font-size: 30px;
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .content p{
+        font-size: 6px;
+        margin-left: 2px;
+        width: 205px;
+        margin-bottom: 20px;
+    }
+
+    .our-project{
+        font-size: 7px;
+        padding: 4px 5px;
+        margin-right: 18px;
+        margin-left: 0px;
+        }
+    .our-contacts{
+        width: 60px;
+        height: 17px;
+        font-size: 6px;
+        padding-left: 3px;
+
+        
+    }
+
+    h3{
+        font-size: 9px;
+        text-align: center;
+        width: auto;
+    }
+
+    .description{
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 6px;
+        margin-left: 15px;
+    }
+    .number{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 30px;
+    }
+    .nav-list li a{
+        font-size: 8px;
+        margin-left: 40px;
+    }
+
+    .footer-box{
+        margin-left: 15px;
+        width: 175px;
+    }
+
+    .content{
+        position: absolute;
+        left: 25%;
+        top: 8%;
+        width: 160px;
+        z-index: 2;
+
+}
+
+    .additional-info{
+        text-align: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .contact-info div h2{
+        font-size: 12px;
+        margin-right: 0;
+    }
+
+    
+    .contact-info div a{
+        font-size: 8px;
+
+    }
+
+    .contact-info div{
+        margin-right: 0px;
+        width: 170px;
+    }
+
+    .contact-info{
+        display: block;
+    }
+    #UsContact{
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: 350px;
+    }
+    .slogan{
+        width: auto;
+        margin-left: 0px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .our-build-enterprice h3{
+        width: auto;
+    }
+
+    .our-build-enterprice{
+        margin-top: 150px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .name{
+        font-size: 9px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    header{
+        padding-top: 10px;
+    }
+}
+
+
+@media(min-width: 200px) and (max-width: 299px){
+
+    .experience {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_img{
+        position: relative;
+        overflow: hidden;
+        height: 210px;
+    }
+
+    .img-box{
+        gap: 12px;
+    }
+
+    .House{
+        width: 40%;
+        position: absolute;
+        transform: translate(177%, 59%);
+        display: none;
+    
+    }
+
+    #viriHeader{
+        margin-right: 3px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+    .left-bg{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        width: 295px;
+        height: 350px;
+        margin-top: 180px;
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        width: 175px;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 13%;
+        margin-top: -215px;
+        z-index: 1;
+
+    }
+
+    .img{
+        width: 52px;
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+    .social-media {
+        margin-left: 0px;
+    }
+
+    h1{
+        width: 150px;
+        font-size: 17px;
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .content p{
+        font-size: 4px;
+        margin-left: -19px;
+        width: 150px;
+    }
+
+    .our-project{
+        font-size: 7px;
+        padding: 4px 5px;
+        margin-right: 18px;
+        margin-left: -24px;
+        }
+    .our-contacts{
+        width: 60px;
+        height: 17px;
+        font-size: 6px;
+        padding-left: 3px;
+
+        
+    }
+
+    h3{
+        font-size: 12px;
+        text-align: center;
+        width: auto;
+    }
+
+    .description{
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        width: auto;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 6px;
+        margin-left: 15px;
+    }
+    .number{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .our-projects{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 11px;
+        justify-content: center;
+    }
+    .nav-list li a{
+        font-size: 6px;
+        margin-left: 11px;
+    }
+
+    .footer-box{
+        margin-left: 15px;
+        width: 175px;
+    }
+
+    .content{
+        position: absolute;
+        left: 29%;
+        top: 8%;
+        width: 160px;
+        z-index: 2;
+
+        }
+
+    .additional-info{
+        text-align: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .contact-info div h2{
+        font-size: 12px;
+        margin-right: 0;
+    }
+
+    
+    .contact-info div a{
+        font-size: 8px;
+
+    }
+
+    .contact-info div{
+        margin-right: 0px;
+        width: 170px;
+    }
+
+    .contact-info{
+        display: block;
+    }
+    #UsContact{
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: 350px;
+    }
+    .slogan{
+        width: auto;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .our-build-enterprice h3{
+        width: auto;
+    }
+
+    .our-build-enterprice{
+        margin-top: 150px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .name{
+        font-size: 9px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    header{
+        padding-top: 10px;
+    }
+}
