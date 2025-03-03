@@ -9,7 +9,6 @@ PROJECT_IMAGES_PATH = "static/imgs/project-images/"
 
 load_dotenv(dotenv_path="admin/admin.env")
 
-os.getenv("SECRET_KEY")
 app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route("/")
