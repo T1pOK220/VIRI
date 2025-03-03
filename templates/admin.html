@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/media.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -26,18 +27,12 @@
                 <img src="{{ url_for('static', filename = ('imgs/project-images/' + file)) }}"class="img" alt=""><br>
                 <button class="delete" onclick="delete_photo('{{ file }}')">Видалити фото</button>
             </div>
-       
-      
- 
                 {% endfor %}
-            </div>   
             {% endif %}
-            <div>
-                <input type="file"  id="upload-profile-pic" hidden>
-            <button type="submit" class="add-photo" onclick="document.getElementById('upload-profile-pic').click()" >Додати фото</button>
-        </div>
-        </div>
-            
+         <div>
+            <input type="file"  id="upload-profile-pic" hidden>
+        <button type="submit" class="add-photo" onclick="document.getElementById('upload-profile-pic').click()" >Додати фото</button>
+    </div>
 {% endblock %}
 
 {% block script %}
