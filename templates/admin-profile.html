@@ -1,6 +1,10 @@
 <html>
 
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/profile.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <title>Профіль</title>
     </head>
 
@@ -16,8 +20,8 @@
         {% endwith %}
 
       <form action="/change-login" method="post">
-
-        <label>Змінити логін:</lable>
+            
+        <label>Змінити логін:</label>
 
         <input type="text" name="newLogin" placeholder="Введіть новий логін">
 
@@ -27,7 +31,7 @@
 
         <form action="/change-password" method="post">
 
-        <label>Змінити пароль:</lable>
+        <label>Змінити пароль:</label>
 
         <input type="text" name="newPassword" placeholder="Введіть новий пароль">
         <input type="text" name="oldPassword" placeholder="Введіть старий пароль">

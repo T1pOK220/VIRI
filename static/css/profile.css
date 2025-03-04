@@ -1,0 +1,44 @@
+*{
+    font-family: Mulish;
+}
+
+h3{
+    display: grid;
+    justify-content: center;
+    margin-top: 25vh;
+
+}
+
+form{
+    display: grid;
+    justify-content: center;
+}
+
+input{
+    width: 35vw;
+    height: 5vh;
+    margin-bottom: 8px;
+
+
+}
+
+label{
+    margin-bottom: 15px;
+}
+
+button{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    background: rgb(92, 176, 86);
+        padding: 12px 20px;
+    border-color: rgb(92, 176, 86);;
+    border: none;
+    text-align: center;
+
+
+}
