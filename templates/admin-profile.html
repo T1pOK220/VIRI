@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <title>Профіль</title>
+    </head>
+
+    <body>
+        <h3>Ваш профіль: {{ adminLogin }}</h3>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p>{{ msg }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+      <form action="/change-login" method="post">
+
+        <label>Змінити логін:</lable>
+
+        <input type="text" name="newLogin" placeholder="Введіть новий логін">
+
+        <button type="submit">Змінити</button>
+
+    </form>
+
+        <form action="/change-password" method="post">
+
+        <label>Змінити пароль:</lable>
+
+        <input type="text" name="newPassword" placeholder="Введіть новий пароль">
+        <input type="text" name="oldPassword" placeholder="Введіть старий пароль">
+
+        <button type="submit">Змінити</button>
+
+    </form>
+        
+    </body>
+</html>

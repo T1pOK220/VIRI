@@ -1,5 +1,5 @@
 function delete_photo(photoName) {
-    fetch('/delete-photo', {
+    fetch('/admin/delete-photo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ document.getElementById("upload-profile-pic").addEventListener("change", async f
     let formData = new FormData();
     formData.append("file", fileInput);
 
-    let response = await fetch("/add-photo", {
+    let response = await fetch("/admin/add-photo", {
         method: "POST",
         body: formData
     });

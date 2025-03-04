@@ -1,15 +1,24 @@
 from flask import Flask, render_template, redirect, url_for, session, request, flash, jsonify
 import os
-from dotenv import load_dotenv
 import bcrypt
+from config import Config
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 PROJECT_IMAGES_PATH = "static/imgs/project-images/"
 
-load_dotenv(dotenv_path="admin/admin.env")
+app.config.from_object(Config)
 
-app.secret_key = os.getenv("SECRET_KEY")
+db = SQLAlchemy(app=app)
+
+class admins(db.Model):
+    login = db.Column("login", db.String(100), primary_key = True)
+    password = db.Column("password", db.String(100))
+
+    def __init__(self, login, password):
+        self.login = login
+        self.password = password
 
 @app.route("/")
 def home():
@@ -17,21 +26,34 @@ def home():
     return render_template("index.html", projects = projects)
 
 @app.route("/admin")
-def admin():
+def admin_panel():
     if "admin" in session:
         projects = sorted(get_project_photos(), key=lambda x: os.path.getmtime(PROJECT_IMAGES_PATH + x))
-        return render_template("admin.html", projects = projects)
+        return render_template("admin-panel.html", projects = projects, admin = session["admin"])
     else:
         return redirect(url_for('login'))
 
-def is_admin(username, password = ""):
+def is_admin(login, password = ""):
     
-    ADMIN_USERNAME = os.getenv("ADMIN_USERNAME")
-    ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD_HASH")
+    found_user = admins.query.filter_by(login=login).first()
 
-    return username == ADMIN_USERNAME and bcrypt.checkpw(password.encode(), ADMIN_PASSWORD.encode())
+    if(found_user):
+        return bcrypt.checkpw(password.encode(), found_user.password.encode())
+    
+    return False
 
-@app.route("/delete-photo", methods = ["POST"])
+
+@app.route("/admin/profile")
+def admin_profile():
+    if "admin" in session:
+        return render_template("admin-profile.html", adminLogin = session["admin"])
+    
+    else:
+        flash("Спершу вам потрібно авторизуватись!")
+        return redirect(url_for("login"))
+
+
+@app.route("/admin/delete-photo", methods = ["POST"])
 def delete_photo():
     if "admin" in session:
         data = request.get_json()
@@ -51,7 +73,7 @@ def delete_photo():
         flash("Спершу вам потрібно авторизуватись!")
         return redirect(url_for("login"))
     
-@app.route("/add-photo", methods = ["POST"])
+@app.route("/admin/add-photo", methods = ["POST"])
 def add_photo():
     if "admin" in session:
       
@@ -76,12 +98,57 @@ def login():
         adminPassword = request.form.get("password")
         
         if is_admin(adminUsername, adminPassword):
-            session["admin"] = True
-            return redirect(url_for("admin"))
+            session["admin"] = adminUsername
+            return redirect(url_for("admin_panel"))
 
         flash("Неправильний логін або пароль!")
     return render_template('login.html')
 
+@app.route("/change-login", methods=["POST"])
+def change_login():
+    if request.method == "POST":
+        if "admin" in session:
+
+            new_login = request.form.get("newLogin")
+
+            admin = admins.query.filter_by(login = session["admin"]).first()
+
+            admin.login = new_login
+            db.session.commit()
+
+            session["admin"] = new_login
+
+            flash("Логін успішно змінено!")
+            return redirect(url_for("admin_profile"))
+        else:
+            flash("Спершу потрібно авторизуватись!")
+            return redirect(url_for("login"))
+
+@app.route("/change-password", methods=["POST"])
+def change_password():
+    if request.method == "POST":
+        if "admin" in session:
+            old_password = request.form.get("oldPassword")
+            new_password = bcrypt.hashpw(request.form.get("newPassword").encode(), bcrypt.gensalt()).decode()
+
+            if is_admin(session["admin"], old_password):
+                admin = admins.query.filter_by(login = session["admin"]).first()
+
+                admin.password = new_password
+
+                db.session.commit()
+
+                flash("Пароль успішно змінено!")
+                
+
+            else:
+                flash("Неправильний пароль!")
+
+            return redirect(url_for("admin_profile"))
+        else:
+            flash("Спершу потрібно авторизуватись!")
+            return redirect(url_for("login"))
+        
 def get_project_photos():
     files = os.listdir(PROJECT_IMAGES_PATH)
 

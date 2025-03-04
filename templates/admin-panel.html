@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block head %}
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +15,9 @@
 
     <title>VIRI</title>
 </head>
+{% endblock %}
+{% block admin %}
+<li><a href="{{ url_for('admin_profile') }}" >{{ admin }}</a></li>
 {% endblock %}
 {% block projects %}
 <div class="our-projects">
