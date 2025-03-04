@@ -23,6 +23,8 @@ input{
 }
 
 label{
+    display: grid;
+    justify-content: center;
     margin-bottom: 15px;
 }
 
