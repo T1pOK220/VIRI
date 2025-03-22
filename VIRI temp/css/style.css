@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 18px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+}
+body{
+    overflow-x: hidden; 
+}
+html {
+    scroll-behavior: smooth;
+}
+.header_img{
+    position: relative;
+    overflow: hidden;
+}
+
+header{
+
+background-color: rgb(178, 226, 175);
+padding-top: 44px;
+}
+
+
+
+
+.logo{
+    width: 900px;
+    height: 518px;
+    margin-top: 0px;
+    margin-bottom: 200px;
+    
+}
+.House{
+    position: absolute;
+    transform: translate(103%, -12%);
+
+}
+nav{
+
+
+height: 23px;
+display: flex;
+margin-left: 165px;
+
+
+}
+.nav-list{
+
+height: 23px;
+display: flex;
+list-style: none;
+position: relative;
+z-index: 2;
+}
+
+a{text-decoration: none;
+margin-left: 52px;
+color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;}
+h2{margin-right: 662px;
+
+}
+.aboutUs{
+    width: 50px;
+    height: 18px;
+    margin: 0;
+}
+h1{
+    color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;}
+.content{
+position: absolute;
+left: 146px;
+right: 222.18px;
+top: 159px;
+bottom: 158px;
+}
+p{color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 37px;
+}
+.our-project{
+    
+    color: rgb(255, 255, 255);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+background: rgb(92, 176, 86);
+    padding: 18px 24px;
+border-color: rgb(92, 176, 86);;
+border: none;
+    margin-right: 16px;
+    }
+.our-contacts{
+    width: 148px;
+    height: 53px;
+    color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+background-color: rgb(178, 226, 175);
+padding-left: 11px;
+    
+}
+.bg{
+    display: flex;
+    background: rgb(255, 255, 255);
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 10;
+    }
+.left-bg{
+
+width: 445px;
+height: 500px;
+margin-top: 150px;
+margin-left: 165px;
+margin-right: 125px;
+}
+.our-build-enterprice{
+    width: 540px;
+    height: 403px;
+    margin-top: 200px;
+   }
+h3{color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;}
+.description{
+    color: rgb(189, 189, 189);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.experience{display: flex;}
+h4{color: rgb(178, 226, 175);
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.number{
+    color: rgb(30, 50, 64);
+    font-family: Mulish;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+.additional-info{
+
+width: auto;
+height: 83px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 8;
+padding: 0px;
+margin-right: 32px;
+margin-top: 15px;
+}
+.our-projects{
+
+    padding-left: 0px;
+}
+.info-box{
+display: flex;
+margin-bottom: 58px;
+}
+.slogan{color: rgb(189, 189, 189);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    margin-top: 12px;
+}
+.arrow{
+    margin-top: 60px;
+    margin-left: 494px;
+    width: 100px;
+    height: 32px;
+    display: flex;
+    text-align: left;
+}
+.img{
+    width: 350px;
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+footer{
+
+    background: rgb(178, 226, 175);
+    padding-top: 90px;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    margin-top: 50px;
+}
+.icons{
+    height: 14px;
+width: 14px;
+margin-right: 10px
+}
+
+
+.name{
+    margin: 0;
+    color: rgb(30, 50, 64);
+font-family: Mulish;
+font-size: 14px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-left: 10px;
+
+}
+.phone{display: flex;}
+.contact-info{
+    width: 255px;
+height: 159px;
+text-align: center;
+
+}
+
+.contact-info h2{
+    margin-bottom: 20px;
+}
+footer div div a{
+    margin: 0;
+}
+.footer-box{
+    display: flex;
+width: auto;
+height: 265px;
+margin-left: 165px;
+
+
+}
+footer div .social-media p {
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+   justify-content: space-between;
+    text-align: center;
+}
+
+.social-media {
+    margin-left: 370px;
+}
+
+
+.img-box{
+    display: grid;
+    grid-template-columns: repeat(3,auto); /* Автоматична підгонка */
+    grid-template-rows: repeat(4,auto); /* Три рядки */
+    gap: 92px;
+    justify-content: center;
+    
+}
+.delete{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10%;
+    margin-top: 40px;
+    font-family: Mulish;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    background: rgb(92, 176, 86);
+    padding: 11px 18px;
+    border-color: rgb(92, 176, 86);
+    border: none;
+}
+.add-photo{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 14px;
+    width: 100%;
+    margin-top:50px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    background: rgb(92, 176, 86);
+        padding: 18px 24px;
+    border-color: rgb(92, 176, 86);;
+    border: none;
+}
+
+.img-box div{
+    width: 100%;
+}
